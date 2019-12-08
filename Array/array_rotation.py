@@ -1,6 +1,3 @@
-# Time complexity - O(N)
-# Space complexity - O(1)
-
 """
     Rotate array of size n by d elements
     [1,2,3,4,5] rotate left by 2 => [3,4,5,1,2]
@@ -11,8 +8,10 @@
         array = r(AB) = BrAr
     3.  Reverse B and A individually
         array = r(Br) r(Ar) = BA
+    
+    Time complexity - O(N)
+    Space complexity - O(1)
 """
-
 def rotateLeft(array, d):
     n = len(array)
     d = d%n
@@ -28,9 +27,9 @@ def rotateLeft(array, d):
     
     return array
 
-
 def rotateRight(array, d):
     return rotateLeft(array, len(array)-d)    
+
 
 if __name__ == "__main__":
     for i in range(7):
